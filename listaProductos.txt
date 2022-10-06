@@ -1,0 +1,16 @@
+[
+  {
+    "title": "mayonesa",
+    "price": 500,
+    "thumbnail": "https://www.hellmanns.com/content/dam/unilever/hellmann_s_world/spain/pack_shot/8410127050819.01-41673974-png.png",
+    "id": 1,
+    "timeStamp": 1665011364560
+  },
+  {
+    "title": "cartuchera",
+    "price": 500,
+    "thumbnail": "https://www.hellmanns.com/content/dam/unilever/hellmann_s_world/spain/pack_shot/8410127050819.01-41673974-png.png",
+    "id": "2",
+    "timeStamp": 1665011810777
+  }
+]

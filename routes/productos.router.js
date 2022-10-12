@@ -16,7 +16,7 @@ function validarAdmin(req, res, next) {
 
 router.get("/", async (req, res) => {
 	const listaProductos = await producto.getAll();
-	res.send(JSON.stringify(listaProductos));
+	res.send(listaProductos);
 });
 
 router.get("/:id", async (req, res) => {

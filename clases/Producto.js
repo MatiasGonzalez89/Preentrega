@@ -29,7 +29,7 @@ export default class Producto {
 			let productos = await this.getAll()
 			if (productos.length) {
 				let productoBuscado = productos.find((prod) => prod.id == id)
-				return JSON.stringify(productoBuscado)
+				return productoBuscado
 			}else {
 				return {error: "No hay producto cargado con ese id"}
 			}

@@ -7,7 +7,7 @@ const carrito = new Carrito();
 
 router.get("/", async (req, res) => {
 	const listaCarritos = await carrito.getAll();
-	res.send(JSON.stringify(listaCarritos));
+	res.send(listaCarritos)
 });
 
 router.get("/:id", async (req, res) => {

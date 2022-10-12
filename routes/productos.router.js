@@ -24,21 +24,21 @@ router.get("/:id", async (req, res) => {
 	res.send(productoBuscadoPorId);
 });
 
-router.post("/", async (req, res) => {
+router.post("/", validarAdmin, async (req, res) => {
 	const productoCreado =  await producto.save(req.body);
 	res.send(productoCreado);
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", validarAdmin, async (req, res) => {
 	const productoActualizado =  await producto.update(req.body ,req.params.id);
 	res.send(productoActualizado);
 });
 
-router.delete("/:id", async(req, res) => {
+router.delete("/:id", validarAdmin, async(req, res) => {
 	const productoBorrado = await producto.delete(req.params.id);
 	res.send(productoBorrado);
 });
 
 export default router
 
-//probarFuncion(producto.getAll())
+

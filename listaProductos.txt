@@ -1,16 +1,32 @@
 [
   {
-    "title": "mayonesa",
-    "price": 500,
-    "thumbnail": "https://www.hellmanns.com/content/dam/unilever/hellmann_s_world/spain/pack_shot/8410127050819.01-41673974-png.png",
-    "id": 1,
-    "timeStamp": 1665011364560
+    "nombre": "cartuchera",
+    "descripcion": "Elemento para guardar utiles",
+    "codigo": 777123,
+    "foto": "https://www.hellmanns.com/content/dam/unilever/hellmann_s_world/spain/pack_shot/8410127050819.01-41673974-png.png",
+    "precio": 500,
+    "stock": 10,
+    "id": 2,
+    "timeStamp": 1665607606436
   },
   {
-    "title": "cartuchera",
-    "price": 500,
-    "thumbnail": "https://www.hellmanns.com/content/dam/unilever/hellmann_s_world/spain/pack_shot/8410127050819.01-41673974-png.png",
-    "id": "2",
-    "timeStamp": 1665011810777
+    "nombre": "mayonesa",
+    "descripcion": "Emulsión para comidas",
+    "codigo": 777145,
+    "foto": "https://www.hellmanns.com/content/dam/unilever/hellmann_s_world/spain/pack_shot/8410127050819.01-41673974-png.png",
+    "precio": 300,
+    "stock": 10,
+    "id": 3,
+    "timeStamp": 1665607661152
+  },
+  {
+    "nombre": "alfajor de chocolate",
+    "descripcion": "Golosina bañada en chocolate",
+    "codigo": 777185,
+    "foto": "https://www.hellmanns.com/content/dam/unilever/hellmann_s_world/spain/pack_shot/8410127050819.01-41673974-png.png",
+    "precio": 200,
+    "stock": 10,
+    "id": 4,
+    "timeStamp": 1665607696009
   }
 ]

@@ -3,7 +3,7 @@ import fs from "fs"
 export default class Producto {
 	constructor(rutaArchivo) {
 		this.archivo = rutaArchivo
-		this.id = 0
+		this.id = 1
 	}
 
 
@@ -49,7 +49,7 @@ export default class Producto {
 				return prod
 			}else {
 				productos = []
-				prod.id = ++this.id
+				prod.id = this.id
 				prod.timeStamp = Date.now()
 				productos.push(prod)
 				await fs.promises.writeFile(this.archivo, JSON.stringify(productos, null, 2), "utf-8")
@@ -98,25 +98,3 @@ export default class Producto {
 		}
 	}
 }
-
-
-// const probarFuncion = async (unaFuncion) => { 
-// 	console.log( await (unaFuncion))
-// }
-
-// const prod = new Producto("listaProductos.txt")
-
-//  const producto = {
-//      "title": 'mayonesa',
-//      "price": 540,
-//      "thumbnail": 'https://www.hellmanns.com/content/dam/unilever/hellmann_s_world/spain/pack_shot/8410127050819.01-41673974-png.png'
-// }
-
-
-// probarFuncion(prod.save(producto))
-// //probarFuncion(prod.getAll())
-// //probarFuncion(prod.getById(1))
-// probarFuncion(prod.update(producto, 2))
-
-
-
